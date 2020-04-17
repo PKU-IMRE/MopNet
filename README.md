@@ -1,6 +1,6 @@
 This code is the official implementation of ICCV 2019 paper "Mop Moire Patterns Using Mopnet".
 
-Prerequisites:
+# Prerequisites:
 1.Linux
 2.python2 or 3
 4.NVIDIA GPU + CUDA CuDNN (CUDA 8.0)
