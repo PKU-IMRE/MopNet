@@ -12,10 +12,10 @@ This code is the official implementation of ICCV 2019 paper "Mop Moire Patterns 
 3. Install python package: numpy, scipy, PIL, math, skimage, visdom
 
 ## Download pre-trained model:
-1.`VGG16`  https://drive.google.com/open?id=1wNHZOyTr3veCHU-JaQwmSV7JbKWIMbAT
-2.`classifier`  https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
-3.`caorse pre-trained edge predictor`  https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
-4.`totally pre-trained mopnet`  https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
+    `VGG16`  https://drive.google.com/open?id=1wNHZOyTr3veCHU-JaQwmSV7JbKWIMbAT
+    `classifier`  https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
+    `caorse pre-trained edge predictor`  https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
+    `totally pre-trained mopnet`  https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
 
 ## Testing:
 Download totally pre-trained mopnet and classifier
@@ -24,12 +24,12 @@ put netEdge_epoch_150.pth and netG_epoch_150.pth into folder mopnet
 Download testset from 
 https://drive.google.com/open?id=1a-4iwy3ujCfC8llBaimjXnVfOM9oGKAV
 
-change the dataroot in run_test.sh
-
-`mkdir results`
-`mkdir results/d`
-`mkdir results/o`
-`mkdir results/g`
+Change the dataroot in run_test.sh
+Create folders:
+    `mkdir results`
+    `mkdir results/d`
+    `mkdir results/o`
+    `mkdir results/g`
 
 execute
 `bash run_test.sh`
