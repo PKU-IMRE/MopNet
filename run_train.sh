@@ -1,0 +1,1 @@
+python train.py --dataroot "/media/he/80FE99D1FE99BFB8/generate_moire/TIP_thin/train" --valDataroot "/media/he/80FE99D1FE99BFB8/generate_moire/TIP_thin/train/val" --pre "thin_" --name "mopnet" --exp "mopnet" --display_port 8098 --originalSize 286 --imageSize 256 --batchSize 2 --label_file "./fffinal_label.txt" --val_label_file "./val_label.txt"
