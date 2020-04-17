@@ -1,26 +1,27 @@
+# MopNet
 This code is the official implementation of ICCV 2019 paper "Mop Moire Patterns Using Mopnet".
 
-# Prerequisites:
+## Prerequisites:
 1.Linux
 2.python2 or 3
 4.NVIDIA GPU + CUDA CuDNN (CUDA 8.0)
 
-Insrallation:
+## Insrallation:
 1. Install PyTorch from  http://pytorch.org
 2. Install Torch vision from https://github.com/pytorch/vision 
 3. Install python package: numpy, scipy, PIL, math, skimage, visdom
 
-Download pre-trained model:
-VGG16:
+## Download pre-trained model:
+`VGG16`
 https://drive.google.com/open?id=1wNHZOyTr3veCHU-JaQwmSV7JbKWIMbAT
-classifier:
+`classifier`
 https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
-caorse pre-trained edge predictor:
+`caorse pre-trained edge predictor`
 https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
-totally pre-trained mopnet:
+`totally pre-trained mopnet`
 https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
 
-Testing:
+## Testing:
 Download totally pre-trained mopnet and classifier
 put color_epoch_95.pth and geo_epoch_95.pth into folder classifier 
 put netEdge_epoch_150.pth and netG_epoch_150.pth into folder mopnet
@@ -29,21 +30,21 @@ https://drive.google.com/open?id=1a-4iwy3ujCfC8llBaimjXnVfOM9oGKAV
 
 change the dataroot in run_test.sh
 
-mkdir results
-mkdir results/d
-mkdir results/o
-mkdir results/g
+`mkdir results`
+`mkdir results/d`
+`mkdir results/o`
+`mkdir results/g`
 
-execute 
-"bash run_test.sh"
+execute
+`bash run_test.sh`
 Then you will get moire free images.
 For fair comparison, we compute the PNSR and SSIM in Matlab which is the same as TIP18. 
 (Moire Photo Restoration Using Multiresolution Convolutional Neural Networks)
 So you can run 
-"matlab test_with_matlabcode.m"
+`matlab test_with_matlabcode.m`
 to get quantitative results.
 
-Training:
+## Training:
 Download caorse pre-trained edge predicotr and put it into folder edge.
 Download VGG and put it into folder models
 Download the dataset from 
@@ -51,9 +52,9 @@ https://drive.google.com/open?id=1a-4iwy3ujCfC8llBaimjXnVfOM9oGKAV
 The whole benchmark training set please contact the author of TIP18. 
 change the dataroot and valDataroot in run_train.sh
 open the visualization:
-"python -m visdom.server -port 8098"
+`python -m visdom.server -port 8098`
 execute
-"bash run_train.sh"
+`bash run_train.sh`
 
 If you have any question, feel free to concat me with cs_hebin@pku.edu.cn
 
