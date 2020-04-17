@@ -25,6 +25,7 @@ Download testset from
 https://drive.google.com/open?id=1a-4iwy3ujCfC8llBaimjXnVfOM9oGKAV
 
 Change the dataroot in run_test.sh
+
 Create folders:
     `mkdir results`
     `mkdir results/d`
@@ -53,6 +54,18 @@ open the visualization:
 execute
 `bash run_train.sh`
 
+## Citation 
+```
+@inproceedings{he2019mop,
+  title={Mop Moire Patterns Using MopNet},
+  author={He, Bin and Wang, Ce and Shi, Boxin and Duan, Ling-Yu},
+  booktitle=ICCV,
+  pages={2424--2432},
+  year={2019}
+}
+```
+
+## Contactor
 If you have any question, feel free to concat me with cs_hebin@pku.edu.cn
 
 
