@@ -18,13 +18,13 @@ This code is the official implementation of ICCV 2019 paper "Mop Moire Patterns 
 4. `totally pre-trained mopnet`  https://drive.google.com/drive/folders/1MkSVkzwWeKmaIRIzq9-J4ZINEFq4TRFA
 
 ## Testing:
-Download totally pre-trained mopnet and classifier
-put color_epoch_95.pth and geo_epoch_95.pth into folder classifier 
-put netEdge_epoch_150.pth and netG_epoch_150.pth into folder mopnet
+Download totally pre-trained mopnet and classifier.
+Put color_epoch_95.pth and geo_epoch_95.pth into folder classifier. 
+Put netEdge_epoch_150.pth and netG_epoch_150.pth into folder mopnet.
 Download testset from 
 https://drive.google.com/open?id=1a-4iwy3ujCfC8llBaimjXnVfOM9oGKAV
 
-Change the dataroot in run_test.sh
+Change the dataroot in run_test.sh.
 
 Create folders:
     `mkdir results`
@@ -32,7 +32,7 @@ Create folders:
     `mkdir results/o`
     `mkdir results/g`
 
-execute
+Execute
 `bash run_test.sh`
 Then you will get moire free images.
 For fair comparison, we compute the PNSR and SSIM in Matlab which is the same as TIP18. 
@@ -43,15 +43,15 @@ to get quantitative results.
 
 ## Training:
 Download caorse pre-trained edge predicotr and put it into folder edge.
-Download VGG and put it into folder models
+Download VGG and put it into folder models.
 Download the dataset from 
 https://drive.google.com/open?id=1a-4iwy3ujCfC8llBaimjXnVfOM9oGKAV
 The whole benchmark training set please contact the author of TIP18. 
-change the dataroot and valDataroot in run_train.sh
-open the visualization:
+Change the dataroot and valDataroot in run_train.sh.
+Open the visualization:
 `python -m visdom.server -port 8098`
 
-execute
+Execute
 `bash run_train.sh`
 
 ## Citation 
@@ -66,7 +66,7 @@ execute
 ```
 
 ## Contactor
-If you have any question, feel free to concat me with cs_hebin@pku.edu.cn
+If you have any question, feel free to concat me with cs_hebin@pku.edu.cn.
 
 
 
