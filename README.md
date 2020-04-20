@@ -6,7 +6,7 @@ This code is the official implementation of ICCV 2019 paper "Mop Moire Patterns 
 2. python2 or 3
 3. NVIDIA GPU + CUDA CuDNN (CUDA 8.0)
 
-## Insrallation:
+## Installation:
 1. Install PyTorch from  http://pytorch.org
 2. Install Torch vision from https://github.com/pytorch/vision 
 3. Install python package: numpy, scipy, PIL, math, skimage, visdom
